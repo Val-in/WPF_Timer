@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <TimerInterval>
+        1000
+    </TimerInterval>
+    <MaxValue>
+        10
+    </MaxValue>
+</Settings>

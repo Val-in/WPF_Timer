@@ -1,0 +1,52 @@
+<Window x:Class="WPF_Timer.BasicTimer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPF_Timer"
+        mc:Ignorable="d"
+        Title="Секундомер" Height="350" Width="525">
+    <Grid Background="#f0f0f0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="LapList"
+                 Grid.Column="1"
+                 Margin="10"
+                 FontSize="14" />
+
+        <TextBlock x:Name="TimeDisplay"
+                   Text="00:00:00.000"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="10" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="StartStopButton"
+                    Content="Старт"
+                    Width="100"
+                    Margin="5"
+                    Click="StartStopButton_Click" />
+            <Button Content="Сброс"
+                    Width="100"
+                    Margin="5"
+                    Click="ResetButton_Click" />
+            <Button Content="Обратно"
+                    Width="100"
+                    Margin="5"
+                    Click="BackButton_Click" />
+
+        </StackPanel>
+        <StackPanel Grid.Column="0" Margin="15">
+            <TextBlock Text="Записи:" FontWeight="Bold" />
+            <ListBox x:Name="StopRecords" Height="60" />
+            <Button Content="Продолжить"
+                    Margin="5"
+                    Click="ContinueButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
