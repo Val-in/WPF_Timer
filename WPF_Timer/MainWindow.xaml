@@ -7,9 +7,10 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="Timer" Height="350" Width="525">
+    
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="Background" Value="#3498db"/>
+            <Setter Property="Background" Value="PaleVioletRed"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="Padding" Value="10"/>
@@ -34,9 +35,25 @@
         </Storyboard>
     </Window.Resources>
     
-    <Canvas>
-       
-        <lvc:CartesianChart Name="Chart" Margin="5" Width="490" Height="310" >
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="BackButton"
+                Content="Обратно"
+                Width="120"
+                Height="50"
+                Click="Button_Click"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="0,0,0,10"/>
+
+        <lvc:CartesianChart Grid.Row="1"
+                            Name="Chart"
+                            Margin="0"
+        >
             <lvc:CartesianChart.Series>
                 <lvc:LineSeries Values="{Binding Values}" PointGeometrySize="5"/>
             </lvc:CartesianChart.Series>
@@ -44,16 +61,5 @@
                 <lvc:Axis Title="Value" LabelFormatter="{Binding YFormatter}"/>
             </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
-        
-        <Button x:Name="BackButton" Content="Обратно" Width="120" Height="40" Click="Button_Click" Canvas.Left="25" Canvas.Top="20">
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="#3498db" BorderBrush="#2980b9" BorderThickness="2" CornerRadius="8">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        
-    </Canvas>
+    </Grid>
 </Window>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NJ9dE0wyxgU=",
+  "dgSpecHash": "06dwOO6VMdI=",
   "success": true,
-  "projectFilePath": "D:\\本机个人文件\\Programming\\C#\\MyProjects\\WPF_Timer\\WPF_Timer\\WPF_Timer.csproj",
+  "projectFilePath": "D:\\Personal\\Programming\\C sharp\\MyProjects\\WPF_Timer\\WPF_Timer\\WPF_Timer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Valeriia\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Valeriia\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"

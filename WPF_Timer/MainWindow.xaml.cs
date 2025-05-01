@@ -40,14 +40,14 @@ public partial class MainWindow : Window
             _timer.Tick += TimerTick;
             _timer.Start();
 
-            _values = new ChartValues<double> { 0.00 };
+            _values = new ChartValues<double> { 0.00 }; //почему значения не сокращены до 2х знаков?
             Values = _values;
             Chart.DataContext = this;
            _currentValue = 1;
            
            _backgroundThemes = new BackgroundThemes();
            
-           var animation = (Storyboard)this.Resources["ValueChangeAnimation"];
+           var animation = (Storyboard)this.Resources["ValueChangeAnimation"]; //почему кнопка не мигает?
            animation.Begin(this.BackButton);
         }
         catch(Exception ex)

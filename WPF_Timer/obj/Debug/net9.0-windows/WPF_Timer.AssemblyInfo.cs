@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF_Timer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+454694d9a9fe18f9d022f8fbb373876291a4ba0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41bd83c4fcdd3adbd0f76753c3dd062236cfada9")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF_Timer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF_Timer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

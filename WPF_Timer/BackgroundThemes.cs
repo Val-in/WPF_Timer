@@ -6,7 +6,7 @@ public class BackgroundThemes
 {
     private List<Brush> _themes = new()
     {
-        Brushes.LightBlue, Brushes.LightGreen, Brushes.LightCoral, Brushes.LightGoldenrodYellow
+        Brushes.LightBlue, Brushes.LightGreen, Brushes.Gainsboro, Brushes.LightGoldenrodYellow
     };
     private int _index = 0;
     
